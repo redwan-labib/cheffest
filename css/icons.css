@@ -1,0 +1,6 @@
+ #food_cart svg path {
+    stroke: black;
+}
+body.dark #food_cart svg path {
+    stroke: white;
+}

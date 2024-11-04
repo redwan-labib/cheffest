@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheffest</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/icons.css">
+</head>
+<body class="dark dark:bg-[#0D0D0D]" >
+    <nav class="bg-slate-100 dark:bg-black py-4 absolute w-full top-0 left-0 z-50 pt-[94px] md:pt-4">
+        <div class="container">
+            <div class="grid grid-cols-[auto_1fr] md:grid-cols-[auto_1fr_auto]">
+                <a href="" class="absolute md:static left-1/2 top-2 -translate-x-1/2 w-[60px] h-[60px] md:w-auto md:h-auto">
+                    <img src="./images/icons/Logo.svg" alt="Logo">
+                </a>
+                <span type="button" class="md:hidden">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6.99951H25M4 13.9995H25M4 20.9995H25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                </span>
+                <ul class="hidden md:flex justify-center items-center gap-[6px]">
+                    <li>
+                        <a class="p-4 capitalize text-xl dark:text-white text-black leading-tight" href="#">Welcome</a>
+                    </li>
+                    <li>
+                        <a class="p-4 capitalize text-xl dark:text-white text-black leading-tight" href="#">Our Menu</a>
+                    </li>
+                    <li>
+                        <a class="p-4 capitalize text-xl dark:text-white text-black leading-tight" href="#">Franchise</a>
+                    </li>
+                    <li>
+                        <a class="p-4 capitalize text-xl dark:text-white text-black leading-tight" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="flex gap-4 items-center justify-end">
+                    <button class="p-1 w-8 h-8 rounded-full bg-transparent relative">
+                        <span class="w-3 h-3 rounded-full bg-red-500 text-white flex items-center justify-center absolute top-0 right-1 text-[8px]">2</span>
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.7436 33.9999C23.1445 33.9999 24.2802 32.8159 24.2802 31.3554C24.2802 29.8949 23.1445 28.7109 21.7436 28.7109C20.3427 28.7109 19.207 29.8949 19.207 31.3554C19.207 32.8159 20.3427 33.9999 21.7436 33.9999Z" fill="white"/>
+                            <path d="M10.146 33.9999C11.5469 33.9999 12.6825 32.8159 12.6825 31.3554C12.6825 29.8949 11.5469 28.7109 10.146 28.7109C8.74504 28.7109 7.60938 29.8949 7.60938 31.3554C7.60938 32.8159 8.74504 33.9999 10.146 33.9999Z" fill="white"/>
+                            <path d="M5.20361 5.95407L4.91371 9.65631C4.85573 10.3665 5.39204 10.9559 6.07329 10.9559H28.2647C28.8735 10.9559 29.3808 10.4723 29.4243 9.83765C29.6127 7.16296 27.6559 4.98695 25.0904 4.98695H7.27635C7.13141 4.32206 6.84151 3.68739 6.39218 3.1585C5.66744 2.35761 4.65281 1.88916 3.60919 1.88916H1.0871C0.492821 1.88916 0 2.40294 0 3.0225C0 3.64206 0.492821 4.15584 1.0871 4.15584H3.60919C4.05852 4.15584 4.47887 4.35228 4.78326 4.68473C5.08765 5.03229 5.2326 5.48562 5.20361 5.95407Z" fill="white"/>
+                            <path d="M27.9192 13.2227H5.68424C5.07546 13.2227 4.58264 13.7062 4.52466 14.3258L4.00285 20.8991C3.79993 23.4832 5.74222 25.6894 8.22082 25.6894H24.339C26.5132 25.6894 28.4265 23.8307 28.5859 21.564L29.0642 14.5071C29.1222 13.812 28.6004 13.2227 27.9192 13.2227Z" fill="white"/>
+                            </svg>
+                    </button>
+                    <button class="p-1 w-8 h-8 rounded-full bg-transparent hidden md:inline-block">
+                        <svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.4583 29.7502C22.8912 29.7502 28.9167 23.7247 28.9167 16.2918C28.9167 8.859 22.8912 2.8335 15.4583 2.8335C8.0255 2.8335 2 8.859 2 16.2918C2 23.7247 8.0255 29.7502 15.4583 29.7502Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M30.3333 31.1668L27.5 28.3335" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner section start -->
+     <section class="pt-[200px] pb-[75px] lg:pb-[246px] bg-slate-100 bg-hero-image bg-no-repeat bg-cover bg-center hero_after">
+        <div class="container">
+            <div class="max-w-[652px]">
+                <h1><span class="block">Welcome!</span> We Made Delicious Food for You</h1>
+                <p class="pt-[10px] lg:pr-[142px] pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <button>Order Online</button>
+            </div>
+        </div>
+     </section>
+    <!-- Banner section end -->
+
+    <!-- Food Maker section start -->
+     <section>
+        <div class="container">
+            <div class="text-center">
+                <h2>Why We are Best Food Maker</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem scrambled it to make a type specimen book.</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 mt-5">
+                <div class="text-center">
+                    <p class="text-lg leading-[30px]">It is a long established fact that a reader will be distracted layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The normal distribution of letters, as opposed to using 'Content  Many desktop publishing packages and web page editors search for 'lorem ipsum' will uncover many web sites still in  humour and the like. <span class="font-bold">Read More</span></p>
+                </div>
+                <div class="rounded-xl overflow-hidden relative">
+                    <img class="w-full object-cover"  src="./images/cheaf.jpg" alt="image">
+                    <!-- <div class="w-[56px] h-[56px] rounded-full dark:bg-white flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer my_shadow video-launch video-play-button">
+                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 9L-8.15666e-07 17.6603L-5.85622e-08 0.339746L15 9Z" fill="black"/>
+                            </svg>
+                    </div> -->
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+                        <button class="video-play-button">
+                           <span class="animi"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Food Maker section end -->
+
+    <!-- Food Cart section start -->
+     <section id="food_cart">
+        <div class="container">
+            <div>
+                <h2>Our Best & Delicious Menu</h2>
+            </div>
+            <div class="overflow-x-scroll md:overflow-hidden">
+                <ul class="flex gap-3 items-center md:justify-between">
+                    <li class="text-base dark:text-white leading-7 text-nowrap">All</li>
+                    <li class="text-base dark:text-white leading-7 text-nowrap">Bread</li>
+                    <li class="text-base dark:text-white leading-7 text-nowrap">Chiffon & Rolls</li>
+                    <li class="text-base dark:text-white leading-7 text-nowrap">Donut</li>
+                    <li class="text-base dark:text-white leading-7 text-nowrap">Pastry & Danish</li>
+                    <li class="text-base dark:text-white leading-7 text-nowrap">Cakes</li>
+                    <li class="text-base dark:text-white leading-7 text-nowrap">Cookies</li>
+                </ul>
+            </div>
+
+            <div class="grid grid-cols-1 gap-[30px] md:grid-cols-2 lg:grid-cols-3 mt-10">
+                <div class="bg-slate-100 dark:bg-[#191919] rounded-[20px] p-5">
+                    <div class="mb-5">
+                        <img src="./images/food-1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="dark:text-white text-[20px] font-medium pb-2">Naan Burger</h3>
+                        <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex justify-between gap-2 items-center" >
+                            <span class="dark:text-white">$1.85</span>
+                            <span class="w-10 h-10 rounded-full border-2 border-black dark:border-white flex items-center justify-center p-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.66669 1.66675H3.11669C4.01669 1.66675 4.72502 2.44175 4.65002 3.33341L3.95835 11.6334C3.84169 12.9917 4.91668 14.1584 6.28335 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5 11.9834L17.95 5.73342C18.05 4.35009 17 3.22508 15.6084 3.22508H4.85003" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.87498 18.3333C7.45028 18.3333 7.91665 17.867 7.91665 17.2917C7.91665 16.7164 7.45028 16.25 6.87498 16.25C6.29968 16.25 5.83331 16.7164 5.83331 17.2917C5.83331 17.867 6.29968 18.3333 6.87498 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-100 dark:bg-[#191919] rounded-[20px] p-5">
+                    <div class="mb-5">
+                        <img src="./images/food-2.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="dark:text-white text-[20px] font-medium pb-2">Naan Burger</h3>
+                        <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex justify-between gap-2 items-center" >
+                            <span class="dark:text-white">$1.85</span>
+                            <span class="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center p-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.66669 1.66675H3.11669C4.01669 1.66675 4.72502 2.44175 4.65002 3.33341L3.95835 11.6334C3.84169 12.9917 4.91668 14.1584 6.28335 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5 11.9834L17.95 5.73342C18.05 4.35009 17 3.22508 15.6084 3.22508H4.85003" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.87498 18.3333C7.45028 18.3333 7.91665 17.867 7.91665 17.2917C7.91665 16.7164 7.45028 16.25 6.87498 16.25C6.29968 16.25 5.83331 16.7164 5.83331 17.2917C5.83331 17.867 6.29968 18.3333 6.87498 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-100 dark:bg-[#191919] rounded-[20px] p-5">
+                    <div class="mb-5">
+                        <img src="./images/food-1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="dark:text-white text-[20px] font-medium pb-2">Naan Burger</h3>
+                        <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex justify-between gap-2 items-center" >
+                            <span class="dark:text-white">$1.85</span>
+                            <span class="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center p-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.66669 1.66675H3.11669C4.01669 1.66675 4.72502 2.44175 4.65002 3.33341L3.95835 11.6334C3.84169 12.9917 4.91668 14.1584 6.28335 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5 11.9834L17.95 5.73342C18.05 4.35009 17 3.22508 15.6084 3.22508H4.85003" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.87498 18.3333C7.45028 18.3333 7.91665 17.867 7.91665 17.2917C7.91665 16.7164 7.45028 16.25 6.87498 16.25C6.29968 16.25 5.83331 16.7164 5.83331 17.2917C5.83331 17.867 6.29968 18.3333 6.87498 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-100 dark:bg-[#191919] rounded-[20px] p-5">
+                    <div class="mb-5">
+                        <img src="./images/food-2.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="dark:text-white text-[20px] font-medium pb-2">Naan Burger</h3>
+                        <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex justify-between gap-2 items-center" >
+                            <span class="dark:text-white">$1.85</span>
+                            <span class="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center p-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.66669 1.66675H3.11669C4.01669 1.66675 4.72502 2.44175 4.65002 3.33341L3.95835 11.6334C3.84169 12.9917 4.91668 14.1584 6.28335 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5 11.9834L17.95 5.73342C18.05 4.35009 17 3.22508 15.6084 3.22508H4.85003" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.87498 18.3333C7.45028 18.3333 7.91665 17.867 7.91665 17.2917C7.91665 16.7164 7.45028 16.25 6.87498 16.25C6.29968 16.25 5.83331 16.7164 5.83331 17.2917C5.83331 17.867 6.29968 18.3333 6.87498 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-100 dark:bg-[#191919] rounded-[20px] p-5">
+                    <div class="mb-5">
+                        <img src="./images/food-1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="dark:text-white text-[20px] font-medium pb-2">Naan Burger</h3>
+                        <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex justify-between gap-2 items-center" >
+                            <span class="dark:text-white">$1.85</span>
+                            <span class="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center p-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.66669 1.66675H3.11669C4.01669 1.66675 4.72502 2.44175 4.65002 3.33341L3.95835 11.6334C3.84169 12.9917 4.91668 14.1584 6.28335 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5 11.9834L17.95 5.73342C18.05 4.35009 17 3.22508 15.6084 3.22508H4.85003" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.87498 18.3333C7.45028 18.3333 7.91665 17.867 7.91665 17.2917C7.91665 16.7164 7.45028 16.25 6.87498 16.25C6.29968 16.25 5.83331 16.7164 5.83331 17.2917C5.83331 17.867 6.29968 18.3333 6.87498 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-100 dark:bg-[#191919] rounded-[20px] p-5">
+                    <div class="mb-5">
+                        <img src="./images/food-2.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="dark:text-white text-[20px] font-medium pb-2">Naan Burger</h3>
+                        <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="flex justify-between gap-2 items-center" >
+                            <span class="dark:text-white">$1.85</span>
+                            <span class="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center p-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.66669 1.66675H3.11669C4.01669 1.66675 4.72502 2.44175 4.65002 3.33341L3.95835 11.6334C3.84169 12.9917 4.91668 14.1584 6.28335 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5 11.9834L17.95 5.73342C18.05 4.35009 17 3.22508 15.6084 3.22508H4.85003" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.87498 18.3333C7.45028 18.3333 7.91665 17.867 7.91665 17.2917C7.91665 16.7164 7.45028 16.25 6.87498 16.25C6.29968 16.25 5.83331 16.7164 5.83331 17.2917C5.83331 17.867 6.29968 18.3333 6.87498 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-10">
+                <button class="w-full py-4">See All</button>
+            </div>
+        </div>
+     </section>
+    <!-- Food Cart section end -->
+
+    <!-- Quality Food section start -->
+     <section>
+        <div class="container">
+            <h2 class="text-[26px] leading-[1.5]">We believe in making quality food</h2>
+            <div class="grid grid-cols-1 gap-[30px] mt-10 md:grid-cols-4">
+                <div class="flex flex-col gap-2 justify-center items-center">
+                    <strong class="count">2M+</strong>
+                    <p class="text-black dark:text-white text-sm">Happy Customers</p>
+                </div>
+                <div class="flex flex-col gap-2 justify-center items-center">
+                    <strong class="count">98%</strong>
+                    <p class="text-black dark:text-white text-sm">Happy Customers</p>
+                </div>
+                <div class="flex flex-col gap-2 justify-center items-center">
+                    <strong class="count">2M+</strong>
+                    <p class="text-black dark:text-white text-sm">Happy Customers</p>
+                </div>
+                <div class="flex flex-col gap-2 justify-center items-center">
+                    <strong class="count">2M+</strong>
+                    <p class="text-black dark:text-white text-sm">Happy Customers</p>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Quality Food section end -->
+
+    <!-- Adventure section start -->
+     <section>
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-[26px] leading-[1.5] pb-5">Start The Adventure Today And Become a Franchisee</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="flex justify-center mt-10">
+                    <button class="w-full py-4 md:w-auto">Become a Franchisee</button>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Adventure section end -->
+
+    <!-- Clients section start -->
+     <section id="clients" class="pb-[90px]">
+        <div class="container">
+            <div class="section_heading">
+                <h2>What Our Clients Are Saying</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-[30px] md:grid-cols-3">
+                <div class="grid grid-cols-1 py-[30px] px-5 bg-[#191919] rounded-xl">
+                    <div class="grid grid-cols-[auto_1fr] gap-3 items-center">
+                        <div class="w-[74px] h-[74px] rounded-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="./images/avater-1.png" alt="">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl leading-[1.5]">Michal Gun</h4>
+                            <p class="text-sm leading-[1.3] pb-2">Head of sales at Tesla </p>
+                            <ul class="flex items-center gap-[3px]">
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pt-[35px] pb-6 px-5">
+                        <span class="-translate-x-6 translate-y-1 flex"> 
+                            <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.0143 -0.000976562L24 3.54847C19.2344 4.38364 18.9256 8.35067 19.3668 10.2298H23.5587V18.999H14.2924C14.0717 17.8855 13.7629 14.2386 14.2924 8.55946C14.8219 2.88034 19.661 0.486203 22.0143 -0.000976562Z" fill="white"/>
+                            <path d="M8.01435 -0.000976562L10 3.54847C5.23444 4.38364 4.92556 8.35067 5.36681 10.2298H9.55874V18.999H0.292368C0.0717403 17.8855 -0.237139 14.2386 0.292368 8.55946C0.821876 2.88034 5.66098 0.486203 8.01435 -0.000976562Z" fill="white"/>
+                            </svg>    
+                        </span>
+                        <hr>
+                    </div>
+                    <div>
+                        <p>There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 py-[30px] px-5 bg-[#191919] rounded-xl">
+                    <div class="grid grid-cols-[auto_1fr] gap-3 items-center">
+                        <div class="w-[74px] h-[74px] rounded-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="./images/avater-1.png" alt="">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl leading-[1.5]">Michal Gun</h4>
+                            <p class="text-sm leading-[1.3] pb-2">Head of sales at Tesla </p>
+                            <ul class="flex items-center gap-[3px]">
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pt-[35px] pb-6 px-5">
+                        <span class="-translate-x-6 translate-y-1 flex"> 
+                            <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.0143 -0.000976562L24 3.54847C19.2344 4.38364 18.9256 8.35067 19.3668 10.2298H23.5587V18.999H14.2924C14.0717 17.8855 13.7629 14.2386 14.2924 8.55946C14.8219 2.88034 19.661 0.486203 22.0143 -0.000976562Z" fill="white"/>
+                            <path d="M8.01435 -0.000976562L10 3.54847C5.23444 4.38364 4.92556 8.35067 5.36681 10.2298H9.55874V18.999H0.292368C0.0717403 17.8855 -0.237139 14.2386 0.292368 8.55946C0.821876 2.88034 5.66098 0.486203 8.01435 -0.000976562Z" fill="white"/>
+                            </svg>    
+                        </span>
+                        <hr>
+                    </div>
+                    <div>
+                        <p>There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 py-[30px] px-5 bg-[#191919] rounded-xl">
+                    <div class="grid grid-cols-[auto_1fr] gap-3 items-center">
+                        <div class="w-[74px] h-[74px] rounded-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="./images/avater-1.png" alt="">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl leading-[1.5]">Michal Gun</h4>
+                            <p class="text-sm leading-[1.3] pb-2">Head of sales at Tesla </p>
+                            <ul class="flex items-center gap-[3px]">
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pt-[35px] pb-6 px-5">
+                        <span class="-translate-x-6 translate-y-1 flex"> 
+                            <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.0143 -0.000976562L24 3.54847C19.2344 4.38364 18.9256 8.35067 19.3668 10.2298H23.5587V18.999H14.2924C14.0717 17.8855 13.7629 14.2386 14.2924 8.55946C14.8219 2.88034 19.661 0.486203 22.0143 -0.000976562Z" fill="white"/>
+                            <path d="M8.01435 -0.000976562L10 3.54847C5.23444 4.38364 4.92556 8.35067 5.36681 10.2298H9.55874V18.999H0.292368C0.0717403 17.8855 -0.237139 14.2386 0.292368 8.55946C0.821876 2.88034 5.66098 0.486203 8.01435 -0.000976562Z" fill="white"/>
+                            </svg>    
+                        </span>
+                        <hr>
+                    </div>
+                    <div>
+                        <p>There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 py-[30px] px-5 bg-[#191919] rounded-xl">
+                    <div class="grid grid-cols-[auto_1fr] gap-3 items-center">
+                        <div class="w-[74px] h-[74px] rounded-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="./images/avater-1.png" alt="">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl leading-[1.5]">Michal Gun</h4>
+                            <p class="text-sm leading-[1.3] pb-2">Head of sales at Tesla </p>
+                            <ul class="flex items-center gap-[3px]">
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                                <li>
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.54127 1.05689C5.71535 0.65545 6.28465 0.65545 6.45873 1.05689L7.5119 3.4856C7.58435 3.65268 7.74191 3.76715 7.9232 3.78443L10.5585 4.03554C10.9941 4.07705 11.17 4.61849 10.842 4.9081L8.85761 6.66024C8.7211 6.78077 8.66091 6.96599 8.70051 7.14375L9.27603 9.72766C9.37116 10.1548 8.91059 10.4894 8.5338 10.2669L6.2542 8.9211C6.09738 8.82851 5.90262 8.82851 5.7458 8.9211L3.4662 10.2669C3.08941 10.4894 2.62884 10.1548 2.72397 9.72766L3.29949 7.14375C3.33909 6.966 3.2789 6.78077 3.14239 6.66024L1.158 4.9081C0.829998 4.61849 1.00592 4.07705 1.44151 4.03554L4.0768 3.78443C4.25809 3.76716 4.41565 3.65268 4.4881 3.4856L5.54127 1.05689Z" fill="#FF9901"/>
+                                    </svg>                                        
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pt-[35px] pb-6 px-5">
+                        <span class="-translate-x-6 translate-y-1 flex"> 
+                            <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.0143 -0.000976562L24 3.54847C19.2344 4.38364 18.9256 8.35067 19.3668 10.2298H23.5587V18.999H14.2924C14.0717 17.8855 13.7629 14.2386 14.2924 8.55946C14.8219 2.88034 19.661 0.486203 22.0143 -0.000976562Z" fill="white"/>
+                            <path d="M8.01435 -0.000976562L10 3.54847C5.23444 4.38364 4.92556 8.35067 5.36681 10.2298H9.55874V18.999H0.292368C0.0717403 17.8855 -0.237139 14.2386 0.292368 8.55946C0.821876 2.88034 5.66098 0.486203 8.01435 -0.000976562Z" fill="white"/>
+                            </svg>    
+                        </span>
+                        <hr>
+                    </div>
+                    <div>
+                        <p>There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Clients section end -->
+
+    <!-- Banner section start -->
+     <section class="dark:bg-white bg-black pb-10">
+        <div class="container">
+            <div class="section_heading">
+                <h2 class="dark:text-black">For more Support</h2>
+            </div>
+            <div>
+                <form action="" class="grid grid-cols-1 gap-6 md:grid-cols-[1fr_auto]">
+                    <input class="text-sm leading-6 font-semibold py-5 px-[30px] rounded-full border border-slate-700 placeholder:text-black" type="email" placeholder="Enter Email">
+                    <button class="dark:bg-black dark:text-white">Subscribe</button>
+                </form>
+            </div>
+        </div>
+     </section>
+    <!-- Banner section end -->
+
+    <!-- Seddon park map section start -->
+     <section>
+        <div class="container">
+            <div class="heading_section">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 md:items-center">
+                <div>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dolore.</h3>
+                    <p>Want to have a superb meal in an exceptional setting with family, friends or work colleagues, here are the addresses of our restaurants.</p>
+                    <button> are the addresses</button>
+                </div>
+                <div>
+                    <div class="my_map relative">
+                        <button class="p-2 rounded-sm bg-slate-300 flex gap-1 items-center absolute left-3 top-3 z-[1000]">
+                            <b>Map</b>
+                            <span>Satellite</span>
+                        </button>
+                        <iframe class="w-[483px] h-[470px] rounded-2xl overflow-hidden" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.156139289205!2d175.27060197673316!3d-37.78638043247518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d18a7bba18423%3A0xf00ef62249d27e0!2sSeddon%20Park!5e0!3m2!1sen!2sbd!4v1730716921458!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            <div></div>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Seddon park map section end -->
+
+    <!-- Footer section start -->
+     <footer class="py-[120px] dark:bg-[#191919] bg-slate-400 dark:text-white">
+        <div class="container">
+            <div class="flex justify-between gap-4 md:gap-[103px]">
+                <div>
+                    <h5 class="pb-3 text-lg font-semibold">Our Products</h5>
+                    <ul> 
+                        <li><a href="#">Our menus</a></li>
+                        <li><a href="#">Our burgers</a></li>
+                        <li><a href="#">Our times sides</a></li>
+                        <li><a href="#">New Item</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="pb-3 text-lg font-semibold">legal information</h5>
+                    <ul> 
+                        <li><a href="#">Legal Notice</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="pb-3 text-lg font-semibold">Contact Us</h5>
+                    <ul> 
+                        <li><a href="#">Our menus</a></li>
+                        <li><a href="#">Our burgers</a></li>
+                        <li><a href="#">Become a Times Square franchisee</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="pb-3 text-lg font-semibold">We accept</h5>
+                    <div>
+                        <img src="./images/visa.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- Footer section end -->
+</body>
+</html>
